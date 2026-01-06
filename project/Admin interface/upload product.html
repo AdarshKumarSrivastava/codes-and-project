@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Upload Form</title>
+    <style>
+        body {
+            background-color: #f9c087;
+        }
+
+        .container {
+            border: 3px solid #c14646;
+            padding: 20px 40px;
+            margin: 50px auto;
+        }
+
+        table {
+            width: 100%;
+            width: fit-content;
+            text-align: center;
+            border: 2px solid white;
+            margin-left: 36%;
+        }
+        
+        td {
+            padding: 10px;
+            border: 2px solid white;
+        }
+
+        input[type="text"],
+        select,
+        textarea,
+        input[type="file"] {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 60px;
+            resize: none;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #357ab8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <table>
+                <tr>
+                    <td>Product Name</td>
+                    <td><input type="text" id="productName" placeholder="<Name>"></td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>
+                        <select>
+                            <option>Drop Down</option>
+                            <!-- Add more categories here -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Max Price</td>
+                    <td><input type="text" id="maxPrice" placeholder="<Price>"></td>
+                </tr>
+                <tr>
+                    <td>Min Price</td>
+                    <td><input type="text" id="minPrice" placeholder="<Price>"></td>
+                </tr>
+                <tr>
+                    <td>Short Description</td>
+                    <td><textarea id="shortDesc" placeholder="<Description>"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Long Description</td>
+                    <td><textarea id="longDesc" placeholder="<Description>"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Product Image</td>
+                    <td><input type="file" id="productImage"></td>
+                </tr>
+                <tr><td colspan="2"><button type="submit">UPLOAD</button></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

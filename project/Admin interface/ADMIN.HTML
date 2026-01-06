@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #ffcc99;
+        }
+
+        .header {
+            background-color: #8B2D2D;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav {
+            margin-top: 10px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .container {
+            margin-top: 100px;
+        }
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid brown;
+            padding: 20px;
+            margin: 20px auto;
+            width: 700px;
+        }
+
+        .card button {
+            background-color:rgb(75, 142, 230);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to Admin of ABC</h1>
+        <div class="nav">
+            <a href="#">Home</a> |
+            <a href="#">Upload Products</a> |
+            <a href="#">View Products</a> |
+            <a href="#">User List</a> |
+            <a href="#">Change Password</a> |
+            <a href="#">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <span>Total Number of Users</span>
+            <button>Qty</button>
+        </div>
+
+        <div class="card">
+            <span>Total Number of Products Upload</span>
+            <button>Qty</button>
+        </div>
+    </div>
+</body>
+
+</html>

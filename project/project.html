@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project </title>
+    <style>
+        body {
+            background: url(soft.png);
+            background-size: cover;
+        }
+
+        h1 {
+            background-color: thistle;
+        }
+
+        .header {
+            justify-items: center;
+            background-color: orange;
+            box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            height: 38px;
+            margin-bottom: 4px;
+
+        }
+
+        .nav {
+            font-size: larger;
+            padding-top: 4px;
+        }
+
+        .nav a {
+            color: black;
+            text-decoration: none;
+            padding: 4px;
+        }
+
+        input[type="button"] {
+            background-color: orange;
+        }
+
+        div.iphone {
+            display: flex;
+            margin-top: 8px;
+            background-color: rgb(244, 237, 237);
+            /* border: 2px solid; */
+            border-radius: 15px;
+            box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+            height: 200px;
+            overflow: hidden;
+        }
+
+        div.iqoo {
+            display: flex;
+            background-color: rgb(244, 237, 237);
+            /* border: 2px solid; */
+            border-radius: 15px;
+            box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+            height: 200px;
+            margin-top: 7px;
+            overflow: hidden;
+        }
+
+        div.mac {
+            background-color: rgb(244, 237, 237);
+            display: flex;
+            margin-top: 3px;
+            border-radius: 15px;
+            box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+
+        }
+
+        div.rarerabbit {
+            background-color: rgb(244, 237, 237);
+            display: flex;
+            /* border: 2px solid; */
+            border-radius: 15px;
+            box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+            height: 200px;
+            margin-top: 7px;
+            overflow: hidden;
+        }
+
+        div.shoes {
+            display: flex;
+            background-color: rgb(244, 237, 237);
+            /* border: 2px solid; */
+            border-radius: 15px;
+            box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+            height: 200px;
+            margin-top: 7px;
+            overflow: hidden;
+        }
+
+        div.itemss {
+            display: flex;
+        }
+
+        div.washing {
+            background-color: rgb(244, 237, 237);
+            /* display: flex; */
+            /* border: 2px solid; */
+            border-radius: 15px;
+            box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 500px;
+            height: 500px;
+            margin-top: 7px;
+            overflow: hidden;
+        }
+
+        div.hp1 {
+            display: flex;
+            margin-left: 10px;
+            border-radius: 15px;
+            box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+            width: 1005px;
+            height: 245px;
+            background-color: rgb(244, 237, 237);
+        }
+
+        div.lenovo {
+            display: flex;
+            margin-left: 10px;
+            border-radius: 15px;
+            box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 5px;
+            width: 1005px;
+            height: 245px;
+            background-color: rgb(244, 237, 237);
+        }
+
+        div.wash1 {
+            /* display: flex; */
+            float: left;
+        }
+
+        div img:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .iphone:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+            transition: transform 0.4s ease;
+        }
+        .iqoo:hover{
+            transform: translateY(-1px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+            transition: transform 0.4s ease;
+        }
+        .mac:hover{
+            transform: translateY(-1px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+            transition: transform 0.4s ease;
+        }
+        .rarerabbit:hover{
+            transform: translateY(-1px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+            transition: transform 0.4s ease;
+        }
+        .shoes:hover{
+            transform: translateY(-1px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+            transition: transform 0.4s ease;
+        }
+        .washing:hover{
+            transform: translateY(-1px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+            transition: transform 0.4s ease;
+        }
+        .hp1:hover{
+            transform: translateY(-1px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+            transition: transform 0.4s ease;
+        }
+        .lenovo:hover{
+            transform: translateY(-1px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+            transition: transform 0.4s ease;
+        }
+        input[type="button"]:hover {
+            background-color: #e68a1f;
+            box-shadow: 0 8px 20px rgba(230,138,31,0.7);
+            cursor: pointer;
+        }
+        input[type="button"]{
+            padding: 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Welcome to E-commerce website </h1>
+    <div class="header">
+        <div class="nav">
+            <a href="project.html">Home</a> |
+            <a href="mobiles.html">Mobiles</a> |
+            <a href="#">Laptops</a> |
+            <a href="#">Washingmachine</a> |
+            <a href="#">Clothes</a> |
+            <a href="index.php">Logout</a>
+        </div>
+    </div>
+    <div class="slider"></div>
+    <!-- ######################################################################## -->
+    <div class="iphone">
+        <div>
+            <img src="iphone.png" alt="" width="120px">
+        </div>
+        <div style="margin-left: 14px;">
+            <font size="4"> Apple iPhone 16 (Black, 128 GB) <br>
+            </font>
+            <font size="6">₹2,426/month</font><br>
+            36 months EMI Plan with BOBCARD
+            Details <br>
+            <font color="green">Extra ₹10901 off </font><br>
+            <font size="5">₹69,999
+                <s>₹79,900</s>
+            </font>
+            <font color="green">12% off </font><br>
+
+            + ₹99 Secured Packaging Fee <br>
+            <input type="button" value="Buy now">
+            <input type="button" value="Add to cart">
+        </div>
+
+        <div><img src="iphone15.png" alt="" width="120px" height="170px" style="margin-top: 12px;"></div>
+        <div style="margin-left: 14px;">
+            <font size="4"> Apple iPhone 15 (Black, 128 GB) </font><br>
+            <font size="6">₹2,286/month</font> <br>
+            36 months EMI Plan with BOBCARD
+            Details <br>
+            <font color="green">Extra ₹5000 off </font><br>
+            <font size="5"> ₹64,999
+                <s>₹69,900</s>
+            </font>
+            <font color="green">7% off</font><br>
+            + ₹99 Secured Packaging Fee <br><input type="button" value="Buy now">
+            <input type="button" value="Add to cart">
+        </div>
+        <div><img src="iphone15promax.png" alt="" width="140px" height="190px" style="margin-top: 8px;"></div>
+        <div style="margin-left: 14px;">
+            <font size="4"> Apple iPhone 15 Pro Max (Black Titanium, 512 GB) </font><br>
+            <font size="6">₹6,325/month</font> <br>
+            36 months EMI Plan with BOBCARD
+            Details <br>
+            <font color="green">Extra ₹5000 off </font><br>
+            <font size="5">₹1,79,900
+                <s>₹1,84,900</s>
+            </font>
+            <font color="green">6% off</font><br>
+            + ₹99 Secured Packaging Fee <br><input type="button" value="Buy now">
+            <input type="button" value="Add to cart">
+        </div>
+    </div>
+    <!-- ##################################################################### -->
+    <div class="iqoo">
+
+        <div> <img src="iqoo13.png" alt="" width="120px" height="180"></div>
+        <div style="margin-left: 14px;">
+            <font size="4">IQOO 13 5G (Legend, 256 GB) (12 GB RAM)</font> <br>
+            <font size="6">₹20,664/month</font> <br>
+            3 months No Cost EMI Plan with American Express
+            Details <br>
+            <font color="green">Extra ₹5000 off </font><br>
+            <font size="5">₹61,990
+                <s>₹66,999</s>
+            </font>
+            <font color="green">6% off</font><br>
+            + ₹99 Secured Packaging Fee <br><input type="button" value="Buy now">
+            <input type="button" value="Add to cart">
+        </div>
+        <div><img src="iqoo z9 lite.png" alt="" width="120px" height="180"></div>
+        <div style="margin-left: 14px;">
+            <font size="4">IQOO Z9 Lite 5G (Mocha Brown, 128 GB) (4 GB RAM)</font> <br>
+            <font size="6">₹374/month</font> <br>
+            36 months EMI Plan with BOBCARD
+            Details <br>
+            <font color="green">Extra ₹5000 off </font><br>
+            <font size="5">₹10,615
+                <s>₹15,499</s>
+            </font>
+            <font color="green">26% off</font><br>
+            + ₹59 Secured Packaging Fee <br><input type="button" value="Buy now">
+            <input type="button" value="Add to cart">
+        </div>
+        <div><img src="iqoo z9s.png" alt="" width="120px" height="180"></div>
+        <div>
+            <font size="4">IQOO Z9s 5G (Titanium, 128 GB) (8 GB RAM)</font> <br>
+            <font size="6">₹6,900/month</font> <br>
+            3 months No Cost EMI Plan with American Express
+            Details <br>
+            <font color="green">Extra ₹7000 off </font><br>
+            <font size="5">₹20,699
+                <s>₹27,999</s>
+            </font>
+            <font color="green">26% off</font><br>
+            + ₹59 Secured Packaging Fee <br><input type="button" value="Buy now">
+            <input type="button" value="Add to cart">
+        </div>
+    </div>
+    <!-- ##################################################################### -->
+
+    <div class="mac">
+        <div><img src="macair.png" alt="" width="600px"></div>
+        <div style="margin-top: 65px;margin-left: 14px;">
+            <font size="6">Apple MacBook Air Apple M4 - (16 GB/256 GB SSD/macOS Sequoia) MW1L3HN/A (15.3 inch, Midnight,
+                1.51 Kg)</font> <br> <br>
+            <font style="opacity: 0.5; font-size: 20px;">4.698 Ratings & 16 Reviews</font> <br>
+            <font size="6">₹10,409/month</font> <br>
+            <font size="4">12 months No Cost EMI Plan with AU Bank Credit Card
+                Details</font> <br>
+            <font size="6">₹1,24,900
+                <s>₹1,34,900</s>
+            </font> <br>
+            <font size="4">+ ₹49 Protect Promise Fee <br>
+                Secure delivery by 29 Mar, Saturday</font> <br>
+            <font color="red" size="4">Hurry, Only 8 left!</font><br>
+            <input type="button" value="Buy now"
+                style="padding: 20px; width: 200px;height: 60px; font-size: larger;"><input type="button"
+                value="Add to cart" style="padding: 20px; width: 200px; font-size: larger; margin: 10px; height: 60px;">
+        </div>
+    </div>
+    <!-- ############################################################################## -->
+    <div class="rarerabbit">
+        <div><img src="rare1.png" alt="" width="140px" height="180px" style="margin-top: 10px;"></div>
+        <div style="margin-top: 15px; margin-left: 5px;">
+            <font size="5">RARE RABBIT</font> <br>
+            <font size="5">Men Slim Fit Checkered Button Down Collar Casual Shirt</font> <br>
+            <font color="green" size="5">Special price</font> <br>
+            <font size="5">₹1,999 <s>₹3,999</s></font>
+            <font color="green" size="4">50% off</font><br>
+            + ₹59 Secured Packaging Fee <br><input type="button" value="Buy now">
+            <input type="button" value="Add to cart">
+        </div>
+        <div><img src="rare2.png" alt="" width="140px" height="180px" style="margin-top: 10px;"></div>
+        <div style="margin-top: 15px; margin-left: 5px;">
+            <font size="5">RARE RABBIT</font> <br>
+            <font size="5"> Men Slim Fit Solid Casual Shirt</font> <br>
+            <font color="green" size="5">Special price</font> <br>
+            <font size="5">₹1,529 <s>₹2,999</s></font>
+            <font color="green" size="4">49% off
+            </font> <br>
+            + ₹59 Secured Packaging Fee <br><input type="button" value="Buy now">
+            <input type="button" value="Add to cart">
+        </div>
+        <div><img src="rare3.png" alt="" width="140px" height="180px" style="margin-top: 10px;"></div>
+        <div style="margin-top: 15px; margin-left: 5px;">
+            <font size="5">RARE RABBIT</font> <br>
+            <font size="5"> Men Slim Fit Printed Spread Collar Casual Shirt</font> <br>
+            <font color="green" size="5">Special price</font> <br>
+            <font size="5">₹1,749<s>₹3,499</s></font>
+            <font color="green" size="4">50% off
+            </font> <br>
+            + ₹59 Secured Packaging Fee <br><input type="button" value="Buy now">
+            <input type="button" value="Add to cart">
+        </div>
+    </div>
+    <!-- ####################################################################### -->
+    <div class="shoes">
+        <div><img src="shoes1.png" alt="" width="190px" height="180px" style="margin-top: 10px;"></div>
+        <div style="margin-top: 15px; margin-left: 8px;">
+            <font size="5">PUMA </font> <br>
+            <font size="5"> Dexfly V1 Sneakers For Men (Black , 9)</font> <br>
+            <font color="green" size="5">Special price</font> <br>
+            <font size="5">₹1,399 <s>₹3,999</s></font>
+            <font color="green" size="4">65% off </font> <br>
+            <font color="red" size="4">Hurry, Only 8 left!</font><br>
+            + ₹59 Secured Packaging Fee <br><input type="button" value="Buy now">
+            <input type="button" value="Add to cart">
+        </div>
+        <div><img src="shoes2.png" alt="" width="190px" height="180px" style="margin-top: 10px;"></div>
+        <div style="margin-top: 15px; margin-left: 8px;">
+            <font size="5">KILLER</font> <br>
+            <font size="5"> Comfortable Outdoor Sneakers For Men (Grey , 6)</font> <br>
+            <font color="green" size="5">Special price</font> <br>
+            <font size="5">₹799 <s>₹2,499</s></font>
+            <font color="green" size="4"> 68% off</font> <br>
+            <font color="red" size="4">Hurry, Only 2 left!</font><br>
+            + ₹59 Secured Packaging Fee <br><input type="button" value="Buy now">
+            <input type="button" value="Add to cart">
+        </div>
+    </div>
+    <!-- ######################################################################### -->
+    <div class="itemss">
+        <div class="washing">
+            <div style="width: fit-content; height:55px;margin-left: 23px;">
+                <h2>Electronic devices</h2>
+            </div>
+            <div class="wash1"><img src="washingmachine1.png" width="190px" height="180px" style="margin-top: 10px;">
+            </div>
+            <div style="margin-top: 15px; margin-left: 8px;">
+                <font size="5">LG 7 kg 5 Star</font> <br>
+                <font size="5"> Smart Inverter Technology</font> <br>
+                <font color="green" size="5">Special price</font> <br>
+                <font size="5">₹20,799 <s>₹27,499</s></font>
+                <font color="green" size="4"> 18% off</font> <br>
+                <font color="red" size="4">Hurry, Only 2 left!</font><br>
+                + ₹59 Secured Packaging Fee <br><input type="button" value="Buy now">
+                <input type="button" value="Add to cart">
+            </div>
+            <div style="position: absolute;"><img src="washingmachine2.png" width="190px" height="180px"
+                    style="margin-top: 25px;"></div>
+            <div style="margin-top: 25px; margin-left: 8px; float: left;">
+                <font size="5">SAMSUNG 7 kg 5 star</font> <br>
+                <font size="5"> Smart Inverter Technology</font> <br>
+                <font color="green" size="5">Special price</font> <br>
+                <font size="5">₹17,799 <s>₹22,499</s></font>
+                <font color="green" size="4"> 18% off</font> <br>
+                <!-- <font color="red" size="4">Hurry, Only 2 left!</font><br> -->
+                + ₹59 Secured Packaging Fee <br><input type="button" value="Buy now">
+                <input type="button" value="Add to cart">
+            </div>
+        </div>
+        <!--######################################################################-->
+        <div class="Hp">
+            <div class="hp1">
+                <img src="hp1.png" width="190px" height="180px" style="margin-top: 10px;">
+                <div style="margin-top: 15px; margin-left: 5px;">
+                    <font size="5">HP Envy </font> <br>
+                    <font size="5"> Intel Core i5 13th Gen 1335U - (16 GB/512 GB SSD/Windows 11 Home) 15-fe0028TU Laptop
+                        (15.6 inch, Nightfall Black, 2.14 kg, With MS Office)</font> <br>
+                    <font color="green" size="5">Special price</font> <br>
+                    <font size="5">₹80,749<s>₹1,10,499</s></font>
+                    <font color="green" size="4">26% off
+                    </font> <br>
+                    + ₹59 Secured Packaging Fee <br><input type="button" value="Buy now">
+                    <input type="button" value="Add to cart">
+                </div>
+            </div>
+            <div class="lenovo">
+                <img src="lenovo.png" alt="" width="200px" height="200px" style="margin-top: 5px;margin-left: 20px; ">
+                <div style="margin-top: 5px; margin-left: 5px;">
+                    <font size="5">Lenovo LOQ </font> <br>
+                    <font size="5"> Intel Core i5 12th Gen 12450HX - (12 GB/512 GB SSD/Windows 11 Home/4 GB
+                        Graphics/NVIDIA GeForce RTX 2050) LOQ 15IAX9D1 Gaming Laptop (15.6 inch, Luna Grey, 2.38 kg)
+                    </font> <br>
+                    <font color="green" size="5">Special price</font> <br>
+                    <font size="5">₹57,749<s>₹80,499</s></font>
+                    <font color="green" size="4">28% off
+                    </font>
+                    <br><input type="button" value="Buy now">
+                    <input type="button" value="Add to cart">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
