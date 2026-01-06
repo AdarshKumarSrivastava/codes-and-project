@@ -1,0 +1,17 @@
+h1{
+    color: red;
+    background-color: teal;
+    width: 60%;
+}
+h3{
+    border-style: solid;
+    border-color:brown;
+    border-radius: 20px 40px 60px;
+    border-width: 5px;
+}
+
+.AM{
+    border-color: green;
+    border-style: dotted;
+    border-width: 3px;
+}

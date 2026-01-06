@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+
+<body>
+    <center>
+        <table border="">
+            <caption>FORM FOR APPLICATION</caption>
+           <form>
+                <tr>
+                    <th> Name:</th>
+                    <td><input type="text" maxlength="20" size="20"></td>
+                </tr>
+                <tr>
+                    <th> DOB:</th>
+                    <td> <input type="DATE"></td>
+                </tr>
+                <tr>
+                    <th>Mobile no.:</th>
+                    <td> <input type="number" maxlength="10"></td>
+                </tr> 
+                <tr>
+                    <th> gender:</th>
+                    <td><input type="radio" name="gender" value="male">MALE
+                        <input type="radio" name="gender" value="Female">FEMALE
+                    </td>
+                </tr><br>
+                <th>Hobbies:</th>
+                <td><input type="checkbox" value="chess">CHESS <br>
+                    <input type="checkbox" value="cricket">cricket <br>
+                    <input type="checkbox" value="Badminton">Badminton <br>
+                    <input type="checkbox" value="RUNNING">RUNNING <br>
+                    <tr>
+                        <TH>EMAIL:</TH>
+                        <TD><input type="email" required></TD>
+                    </tr>
+                    <tr>
+                        <TH>PASSWORD:</TH>
+                        <TD><input type="password" required></TD>
+                    </tr>
+                    <tr>
+                        <th>Passport type photo:</th>
+                        <td><input type="file" required></td>
+                    <tr>
+                        <th>SELECT:</th>
+                        <TD>
+                            <SELect>
+                                <option value="">SELECT</option>
+                                <option value="gen">GENERAL</option>
+                                <option value="OBC">OBC</option>
+                                <option value="ST">ST</option>
+                                <option value="SC">SC</option>
+                            </SELect>
+                        </TD>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <th>Feedback:</th>
+                        <td><textarea rows="10" cols="30" placeholder="comment here"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <input type="submit" value="SUBMIT YOUR DATA"> &nbsp;&nbsp;&nbsp; <input type="reset"
+                                value="RESET">
+                </TD>
+                </tr>
+            </form>
+        </table></center> <br>
+        <br>
+        <fieldset>
+            <legend>MY FORM</legend>
+            NAME:
+            <input type="text" size="15" placeholder="enter user name"><BR>
+            DOB:
+            <input type="date"><BR>
+            EMAIL:
+            <input type="email" size="20" placeholder="enter your email" required> <br>
+            PASSWORD:
+            <input type="password" size="20" required> <br>
+            SELECT:
+            <SELect>
+                <option value="">SELECT</option>
+                <option value="gen">GENERAL</option>
+                <option value="OBC">OBC</option>
+                <option value="ST">ST</option>
+                <option value="SC">SC</option>
+            </SELect> <br>
+            Feedback: <br>
+            <textarea rows="10" cols="30" placeholder="comment here"></textarea> <br>
+            <input type="submit" value="SUBMIT YOUR DATA"> &nbsp;&nbsp;&nbsp; <input type="reset" value="RESET">
+        </fieldset>
+</body>
+
+</html>

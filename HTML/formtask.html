@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM 1</title>
+</head>
+
+<body>
+    <table border="7" bgcolor="lightblue" width="500" height="250">
+        <form>
+            <tr>
+                <th colspan="2">HTML FORM WITH TABLE</th>
+            </tr>
+            <tr>
+                <tD> Name:</td>
+                <td><input type="text" maxlength="20" size="20"></td>
+            </tr>
+            <tr>
+                <td> Age:</td>
+                <td> <input type="DATE"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" value="male">MALE
+                    <input type="radio" name="gender" value="Female">FEMALE
+                </td>
+            <tr>
+                <td>file:</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <TH>PASSWORD:</TH>
+                <TD><input type="password" required></TD>
+            </tr>
+            <tr>
+                <td>SUBMIT:</td>
+                <td><Input type="submit" placeholder="SEND"></Input></td>
+            </tr>
+    </table>
+    <!--###################################################################################### -->
+    <table border="0" bgcolor="yellow" width="900">
+        <form action="post">
+            <tr>
+                <th bgcolor="orange" colspan="3">THE WORLD OF FRUITS</th>
+            </tr> <br>
+            <tr>
+                <th colspan="3">FRUIT SURVEY</th>
+            </tr> <br>
+            <TR>
+                <TD align="right">NAME:</TD>
+                <TD><INPut type="text" maxlength="20"></INPut></TD>
+            </TR> <br>
+            <tr>
+                <td align="right">Address</td>
+                <td><input type="text"></td>
+            </tr> <br>
+            <tr>
+                <td align="right">Email</td>
+                <td><input type="email" required>&nbsp;&nbsp;<font color="red">Missing</font>
+                </td>
+            </tr> <br>
+            <tr>
+                <td align="right">How many pieces of fruit do you eat per day ?</td>
+                <td><input type="radio" name="fruit" value="0">0 <br>
+                    <input type="radio" name="fruit" value="1">1 <br>
+                    <input type="radio" name="fruit" value="2">2 <br>
+                    <input type="radio" name="fruit" value="more than 2">more than 2
+                </td>
+            </tr> <br>
+            <tr>
+                <td align="right">My favourite fruit</td>
+                <td><select multiple>
+                        <option value="Apple">Apple</option>
+                        <option value="Banana">banana</option>
+                        <option value="Plum">Plum</option>
+                        <option value="Pomegranate">Pomegranate</option>
+                    </select>
+            </tr> <br>
+            <tr>
+                <td align="right">Would you like a brochure?</td>
+                <td><input type="checkbox"></td>
+            </tr> <br>
+            <tr>
+                <th colspan="100" align="center"><input type="submit"></th>
+            </tr>
+        </form>
+    </table> <br>
+    <!--#############################################################################################-->
+    <table border="7" width="500">
+        <form action="post">
+            <tr>
+                <b>
+                    <th colspan="2">Pizza Shop 2.0</th>
+                </b>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td>Pizza Topping</td>
+                <td><input type="radio" name="radio" value="Supreme">Supreme <br>
+                    <input type="radio" name="radio" value="Vegetarian">Vegetarian <br>
+                    <input type="radio" name="radio" value="Hawaiian">Hawaiian
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza Sauce</td>
+                <td>
+                    <select>
+                        <option value="tomato">Tomato</option>
+                        <option value="Potato">Potato</option>
+                        <option value="Chilli">Chilli</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Optional Extras</td>
+                <td><input type="checkbox" value="extra cheese">Extra Cheese
+                    <input type="checkbox" value="Gluten Free Base">Gluten Free Base
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Delivery instruction: <br> <textarea name="Address" cols="70" rows="6"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Send your order">
+                </td>
+            </tr>
+        </form>
+    </table> <br>
+    <!--#############################################################################################-->
+    <fieldset style="display: block; width:fit-content">
+        <center>ABC Pizzas</center>
+        <table>
+            <tr>
+                <td>
+                    <fieldset style="width: 160px;">
+                        <legend></legend>
+                        Date <input type="date">
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset style="width: 80px;">
+                        <legend>Size</legend>
+                        <input type="radio" value="S" name="aa">Small
+                        <input type="radio" value="M" name="aa">Medium
+                        <input type="radio" value="L" name="aa">Large
+
+                    </fieldset>
+                </td>
+                <td rowspan="" colspan="">
+                    <fieldset style="width: 280px;">
+                        <legend>Topping</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" value="">Extra cheese
+                                    <input type="checkbox" value="">Extra cheese <br>
+                                    <input type="checkbox" value="">Extra cheese
+                                    <input type="checkbox" value="">Extra cheese <br>
+                                    <input type="checkbox" value="">Extra cheese
+                                    <input type="checkbox" value="">Extra cheese <br><input type="checkbox"
+                                        value="">Extra cheese
+                                    <input type="checkbox" value="">Extra cheese <br><input type="checkbox"
+                                        value="">Extra cheese
+                                    <input type="checkbox" value="">Extra cheese <br>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </fieldset>
+                </td>
+            <tr>
+                <td>
+                    <fieldset style="width: 220px;;">
+                        <legend></legend>
+                        phone <input type="number">
+                        <center><input type="button" value="Find browser"></center>
+                        <table border="">
+                            <tr>
+                                <td width="50px">bob</td>
+                                <td width="160px">Adams</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">111 Main street</td>
+                            </tr>
+                        </table>
+                        <textarea name="" id="" cols="25" rows="5"></textarea>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset style="width: fit-content;">
+                        <legend></legend>
+                        <input type="checkbox"> Deliver
+                    </fieldset> <br>
+                    Special info: <br>
+                    <input type="text" size="30"> <br>
+                    <input type="button" value="Build Pizza">
+                    <input type="button" value="order Complete">
+                    <input type="button" value="Exit">
+                </td>
+            </tr>
+            </td>
+        </table>
+    </fieldset>
+    <!-- #################################################################################### -->
+    <table border="0" width="600" bgcolor="orange">
+        <form action="post">
+            <TR>
+                <th colspan="2">Student Registration Form</th>
+            </TR>
+            <tr>
+                <TD>NAME</TD>
+                <td><INput type="text"></INput></td>
+            </tr>
+            <tr>
+                <td>Fathers nme:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Dob:</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Sex:</td>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Femle
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td>Course:</td>
+                <td><select>
+                        <option value="PHP">PHP</option>
+                        <option value="PYTHON">PYTHON</option>
+                        <option value="java">java</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Parmanent Address:</td>
+                <td><input type="text" name=""></td>
+            </tr>
+            <tr>
+                <td>district:</td>
+                <td><select>
+                        <option value="xyz">xyz</option>
+                        <option value="abc">abc</option>
+                        <option value="zbc">zbc</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><select>
+                        <option value="xyz">xyz</option>
+                        <option value="abc">abc</option>
+                        <option value="zbc">zbc</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Pincode:</td>
+                <td>
+                    <input type="number" maxlength="6">
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile no:</td>
+                <td><input type="number" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><input type="reset"></td>
+                <td><input type="submit" value="Submit form"></td>
+            </tr>
+        </form>
+    </table>
+    <!-- ####################################################################################### -->
+    <table border="0" bgcolor="yellow" width="600" height="300">
+        <form action="post">
+            <tr>
+                <th bgcolor="orange" colspan="3">Registration Form</th>
+            </tr> <br>
+            <TR>
+                <TD align="right">NAME:</TD>
+                <TD><INPut type="text" maxlength="20"></INPut></TD>
+            </TR> <br>
+            <tr>
+                <td align="right">Password:</td>
+                <td><input type="password"></td>
+            </tr> <br>
+            <tr>
+                <td align="right">Email</td>
+                <td><input type="email" required>
+                </td>
+            </tr> <br>
+            <tr>
+                <td align="right">Gender:</td>
+                <td><input type="radio" name="fruit" value="male">MALE<br>
+                    <input type="radio" name="fruit" value="Female">FEMALE
+                </td>
+            </tr> <br>
+            <tr>
+                <td align="right">Interested in:</td>
+                <td><select multiple>
+                        <option value="Designing">Designing</option>
+                        <option value="Coding">Coding</option>
+                        <option value="Analysis">Analysis</option>
+                    </select>
+            </tr> <br>
+            <tr>
+                <td align="right">Agree term & condition</td>
+                <td><input type="checkbox"></td>
+            </tr> <br>
+            <tr>
+                <th colspan="100" align="center"><input type="submit"></th>
+            </tr>
+        </form>
+    </table>
+    <!-- ###################################################################################### -->
+    <table border="0" width="555" bgcolor="yellow">
+        <form>
+            <tr>
+                <td colspan="2">
+                    <h3>PIZZA SHOP</h3>
+                </td>
+            </tr> <br>
+            <tr>
+                <td colspan="2">No validation implemente</td>
+            </tr>
+            <tr>
+                <td>Patron name:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Base:</td>
+                <td>
+                    <input type="radio" name="xyz"> Original Crust
+                    <input type="radio" name="xyz"> Handle-streched crust
+                    <input type="radio" name="xyz">Pan crust <br>
+                    <input type="radio" name="xyz">Oval Edge Crust
+                    <input type="radio" name="xyz">Square Crust
+                </td>
+            </tr>
+            <tr>
+                <td>Topping:</td>
+                <td>
+                    <select>
+                        <option value="Italian classic">Italian classic</option>
+                        <option value="xyz">xyz</option>
+                        <option value="abcc">abcc</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Additional Topping:</td>
+                <td>
+                    <input type="checkbox">Beef
+                    <input type="checkbox">Chicken
+                    <input type="checkbox">Capsicum <br>
+                    <input type="checkbox">olive
+                    <input type="checkbox">olive
+                    <input type="checkbox">olive <br>
+                    <input type="checkbox">chilli
+                    <input type="checkbox">chilli
+                    <input type="checkbox">chilli <br>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Double cheese:</td>
+                <td><input type="radio" value="choice">yes
+                    <input type="radio" value="choice">no
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="order">
+                </td>
+            </tr>
+        </form>
+    </table> <br><br>
+    <!--###########################################################################  -->
+    <table border="5">
+        <form>
+            <tr bgcolor="lightblue">
+                <b>
+                    <td>Name</td>
+                </b>
+                <b>
+                    <td>Value</td>
+                </b>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Sex:</td>
+                <td>
+                    <input type="radio" name="gender" value="male">Male <br>
+                    <input type="radio" name="gender" value="female">Femle
+                </td>
+            </tr>
+            <tr>
+                <td>Eye color:</td>
+                <td><select name="" id="">
+                        <option value="green">green</option>
+                        <option value="blue">blue</option>
+                        <option value="blue">blue</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Check all that apply</td>
+                <td>
+                    <input type="checkbox">Over 6 feet tall <br>
+                    <input type="checkbox">Over 200 pounds
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Describe your athletic ability: <br>
+                    <textarea name="" id="" cols="35" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Enter my information"></td>
+            </tr>
+        </form>
+    </table>
+    <!-- ############################################################################### -->
+    <br><br>
+    <table border="0">
+        <form action="post">
+            <tr>
+                <td>
+                    <font color="red">*</font>First Name:
+                </td>
+                <td><input type="text" maxlength="25" size="20">
+            </tr>
+            <tr>
+                <td>
+                    <font color="red">*</font>Last Name:
+                </td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="red">*</font>Password:
+                </td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="red">*</font>Confirm pwD:
+                </td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="red">*</font>Email address:
+                </td>
+                <td><input type="email" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Display name:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>User language:</td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>latitude:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Longitude:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Avatar:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset">
+                </td>
+            </tr>
+        </form>
+    </table>
+    <!-- ######################################################## -->
+    <br><br>
+    <table>
+        <form>
+            <b style="font-size: 40px;">Contact us</b><br><br>
+            if ou are expecting a response,please enter a valid email address. <br>
+            <tr>
+                <td>Your name:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Your Email:</td>
+                <td>
+                    <input type="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Subject:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Reasons:</td>
+                <td>
+                    <select name="" id="">
+                        <option value="GENERAL">GENERAL FEEDBCK</option>
+                        <option value="GENERAL"> FEEDBCK</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Message:
+                </td>
+                <td>
+                    <textarea name="" id="" cols="20" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Contact us"></td>
+            </tr>
+        </form>
+    </table>
+    <!-- ################################################################### -->
+    <br><br><br>
+
+    <fieldset style="width: fit-content;">
+        <legend>User details</legend>
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email address:</td>
+                <td><input type="email"> <br>we will never sell or disclose your email address yo anyone. <b>this is an
+                        example of another for an input field</b> </td>
+            </tr>
+            <tr>
+                <td>First name:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Last name:</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+    </fieldset><br>
+    <fieldset style="width: 793px;">
+        <legend>Contact information</legend>
+        <table>
+            <tr>
+                <td>address 1:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>address 2:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><input type="text" required> <br>error could be highlighted by giving </td>
+            </tr>
+            <tr>
+                <td>telephone:</td>
+                <td><input type="text" size="1" maxlength="3">+<input type="text" size="1" maxlength="3">+<input
+                        type="text" size="3" maxlength="4">
+                    <br>(###)&nbsp;&nbsp;+&nbsp;&nbsp;###&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;####</td>
+            </tr>
+        </table>
+    </fieldset>
+    <!-- ################################################################# -->
+    <br><br>
+    <form>
+        <b style="font-size: 30px;">Order Pizza Now!</b><br>
+        <br>
+        Select your pizza size: <br>
+        <input type="radio" name="size" value="Small"> Small <br>
+        <input type="radio" name="size" value="Medium">Medium <br>
+        <input type="radio" name="size" value="Large">Large <br>
+        <br>
+        Select the crust type : <br>
+        <select name="" id="">
+            <option value="xyz">Deep dish</option>
+            <option value="xyz">xyz</option>
+            <option value="xyz">xyz</option>
+        </select> <br> <br>
+        select the fillers: <br>
+        <input type="checkbox">Panner <br>
+        <input type="checkbox">Mushrooms <br>
+        <input type="checkbox">Peppers
+        <br> <br>
+        Name: <input type="text"> <br>
+        phone: <input type="text"> <br>
+        <textarea cols="25" rows="5" placeholder="Message:"></textarea> <br>
+        <br> Send your CV: <input type="text" size="13"> <input type="button" value="browse..."> <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <!-- ######################################################### -->
+    <br><br>
+    <form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+            style="color: blue; font-size: 30px;">Welcom to CyberPizza</b> <br><br>
+        <b style="color: red;">Enter your order.</b> <br><br>
+        Your name:
+        <input type="text"> <br><br>
+        Your address:
+        <input type="text"> <br><br>
+        Number of pies:
+        <input type="number"> <br><br>
+        Pizza size: <br>
+        <ul type="disc">
+            <li><input type="radio" name="size" value="Small"> 8 inch
+            <li><input type="radio" name="size" value="Medium">10 inch</li>
+            <li><input type="radio" name="size" value="Large">12 inch </li>
+        </ul>
+        <br><br>
+        Toppings: <br><br>
+        <input type="checkbox">Pepperoni
+        <input type="checkbox">onions
+        <input type="checkbox">Mushrooms
+        <input type="checkbox">Sausage <br><br>
+        (You can select multiple toppings) <br><br>
+        <input type="submit" value="Submit orer now!"> <input type="reset">
+    </form>
+    <!-- ########################################################################## -->
+    <br><br>
+    <form>
+        <b style="font-size: 30px;">Order form</b>
+        <hr>
+        How many would you like to Order ?
+        <br>
+        <input type="radio" name="count">1 - $10 <br>
+        <input type="radio" name="count">2 - $20 <br>
+        <input type="radio" name="count">3 - $25 <br> <br>
+        <B>Name<font color="red">*</font></B> <br>
+        <input type="text" size="5">
+        <input type="text" size="10"><br>First
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Last <br>
+        <br>
+        Email: <br>
+        <input type="email"> <br> <br>
+        Phone number: <br>
+        <input type="text" size="1" maxlength="3">+<input type="text" size="1" maxlength="3">+<input type="text"
+            size="3" maxlength="4"> <br>(###)&nbsp;&nbsp;+&nbsp;&nbsp;###&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;#### <br><br>
+        Address: <br>
+        <input type="text" size="80">
+        <br><br>
+        Street Address: <br>
+        <input type="text" size="80">
+        <br><br>
+        Address line 2: <br>
+        <input type="text" size="30"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"> <br>
+        City
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        State / Region <br> <br>
+        <input type="text" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"> <br>
+        Postal / Zip code
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Country <br>
+        <br>
+        <input type="submit"> <br><br> <br>
+    </form>
+    <!-- ################################################################################ -->
+    <table width="700">
+        <form>
+            <tr>
+                <td colspan="2"><b style="color: blue;margin-left: 200px;">Add Contact details </b></td>
+            </tr>
+            <tr>
+                <td align="right">Name:</td>
+                <td><input type="text" size="35"></td>
+            </tr>
+            <tr>
+                <td align="right">Company</td>
+                <td>
+                    <select name="" id="">
+                        <option value="xyz">TCS</option>
+                        <option value="xyz">TCS</option>
+                        <option value="xyz">TCS</option>
+                        <option value="xyz">TCS</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Title:</td>
+                <td><input type="text" size="35"></td>
+            </tr>
+            <tr>
+                <td align="right">Department:</td>
+                <td><input type="text" size="35"></td>
+            </tr>
+            <tr>
+                <td align="right">Phone number:</td>
+                <td><input type="text" size="16">
+                    eXT. <input type="text" size="8"></td>
+            </tr>
+            <tr>
+                <td align="right">Mobile:</td>
+                <td><input type="text" size="16">
+                    eXT. <input type="text" size="8"></td>
+            </tr>
+            <tr>
+                <td align="right">Fax:</td>
+                <td><input type="text" size="16">
+                    eXT. <input type="text" size="8"></td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Email Address:
+                </td>
+                <td><input type="text" size="35"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="save">
+                    <input type="button" value="Save & Add another"> <input type="button" value="Cancel">
+                </td>
+            </tr>
+        </form>
+    </table>
+    <!-- ####################################################################### --> <br> <br>
+    <table width="600">
+        <form>
+            <tr></tr>
+            <tr>
+                <td colspan="2"> <b style="font-size: 40px;">Volunteer Registration</b></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <b style="font-size: 25px;">Register to Volunteer your help with our campaign</b></td>
+            </tr>
+            <tr>
+            </tr>
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>Phone</td>
+                </tr>
+                <tr>
+                    <td><input type="text" size="10">
+                        <input type="text" size="10">
+                    </td>
+                    <td>
+                        <input type="text" size="1" maxlength="3"> +
+                        <input type="text" size="1" maxlength="3"> + <input type="text" size="3" maxlength="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>Mobile</td>
+                </tr>
+                <tr>
+                    <td><input type="text" size="26">
+                    <td>
+                        <input type="text" size="1" maxlength="3"> +
+                        <input type="text" size="1" maxlength="3"> + <input type="text" size="3" maxlength="4">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            What can you help with ? <br>
+            <input type="checkbox">Delivering Flyers
+            <input type="checkbox">Taking phone calls
+            <input type="checkbox">Door to Door <br>
+            <input type="checkbox">Public relations
+            <input type="checkbox">Entering Data
+            <input type="checkbox">Clerical work <br><br>
+            Why o want to join our campaign ? <br>
+            <textarea name="" id="" cols="50" rows="5"></textarea>
+        </form>
+    </table> <br> <br>
+    <!-- ###################################################################################### -->
+    <form>
+        <fieldset style="width:fit-content;">
+            <b style="font-size: 40px;">User input form</b>
+            <fieldset>
+                <legend>Personal particular</legend>
+                Name: <input type="text"> <br>
+                Password: <input type="password"> <br>
+                Gender: <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female <br>
+                Age: <select name="" id="">
+                    <option value=" 1 year old">
+                        < 1 year old</option>
+                    <option value=" 3 year old">
+                        < 3 year old</option>
+                    <option value=" 5 year old">
+                        < 5 year old</option>
+                </select>
+
+            </fieldset>
+            <fieldset>
+                <legend>languages</legend>
+                <input type="checkbox">Java
+                <input type="checkbox">C/C++
+                <input type="checkbox">C#
+            </fieldset>
+            <fieldset>
+                <legend>Instruction</legend>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Enter your instruction here"></textarea>
+            </fieldset>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+
+        </fieldset>
+    </form>
+</body>
+</html>

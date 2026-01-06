@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1.a{
+            font-size: 90px;
+            background: linear-gradient(red,blue,green);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        div.ab{
+            -webkit-mask-image:url(blacksplash.jpg);
+            mask-image:url(blacksplash.jpg);
+            mask-repeat: no-repeat;
+            mix-blend-mode: screen;
+        }
+        div.a1{
+            -webkit-filter: drop-shadow(5px 5px 5px blue);
+            filter: drop-shadow(5px 5px 5px blue);
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mask effect form image</h1>
+    <div class="ab"><img src="image.png" alt=""></div>
+    <h2> Original image</h2>
+    <div><img src="image.png" alt=""></div>
+    <br><br>
+    <h1 class="a">HELLO WORLD</h1>
+    <div class="a1">
+        <img src="image-removebg-preview.png" alt="">
+    </div>
+
+</body>
+
+</html>

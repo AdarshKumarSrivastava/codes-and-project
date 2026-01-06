@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranform</title>
+    <style>
+        .a {
+            color: red;
+            background-color: aqua;
+            width: 200px;
+            height: 30px;
+        }
+
+        .a:hover {
+            transform: translate(130px, 80px);
+            transition: 3s;
+        }
+
+        .b {
+            color: red;
+            background-color: yellow;
+            width: 200px;
+            height: 30px;
+        }
+
+        .b:hover {
+            transform: translateX(30px);
+            transition: 3s;
+        }
+
+        .c {
+            color: red;
+            background-color: green;
+            width: 200px;
+            height: 30px;
+        }
+
+        .c:hover {
+            transform: translateY(30px);
+            transition: 3s;
+        }
+
+        .d {
+            color: red;
+            background-color: pink;
+            width: 200px;
+            height: 30px;
+        }
+
+        .d:hover {
+            transform: scale(2, 2);
+            transition: 3s;
+        }
+
+        .e {
+            color: red;
+            background-color: #ffadcd;
+            width: 200px;
+            height: 30px;
+        }
+
+        .e:hover {
+            transform: scaleX(2);
+            transition: 3s;
+        }
+
+        .f {
+            color: red;
+            background-color: #aaffed;
+            width: 200px;
+            height: 30px;
+        }
+
+        .f:hover {
+            transform: scaleY(2);
+            transition: 3s;
+        }
+
+        .g {
+            color: red;
+            background-color: #eeacbf;
+            width: 200px;
+            height: 30px;
+        }
+
+        .g:hover {
+            transform: skew(20deg, 40deg);
+            transition: 3s;
+        }
+
+        .h {
+            color: red;
+            background-color: #ddffed;
+            width: 200px;
+            height: 30px;
+        }
+
+        .h:hover {
+            transform: skewX(60deg);
+            transition: 3s;
+        }
+
+        .i {
+            color: red;
+            background-color: #adedae;
+            width: 200px;
+            height: 30px;
+        }
+
+        .i:hover {
+            transform: skewY(20deg);
+            transition: 3s;
+        }
+
+        .j {
+            color: red;
+            background-color: #adcdae;
+            width: 200px;
+            height: 30px;
+        }
+
+        .j:hover {
+            transform: rotateX(90deg);
+            transition: 3s;
+        }
+
+        .k {
+            color: red;
+            background-color: #adadae;
+            width: 200px;
+            height: 30px;
+        }
+
+        .k:hover {
+            transform: rotateY(90deg);
+            transition: 3s;
+        }
+
+        .I {
+            color: red;
+            background-color: #adfdae;
+            width: 200px;
+            height: 30px;
+        }
+
+        I.hover {
+            transform: rotateZ(360deg);
+            transition: 3s;
+        }
+
+        .aa {
+            color: red;
+            background-color: aqua;
+            width: 200px;
+            height: 30px;
+        }
+
+        .aa:hover {
+            transform: translate(-130px, -80px);
+            transition: 3s;
+        }
+
+        .bb {
+            color: red;
+            background-color: yellow;
+            width: 200px;
+            height: 30px;
+        }
+
+        .bb:hover {
+            transform: translateX(-30px);
+            transition: 3s;
+        }
+
+        .cc {
+            color: red;
+            background-color: green;
+            width: 200px;
+            height: 30px;
+        }
+
+        .cc:hover {
+            transform: translateY(-30px);
+            transition: 3s;
+        }
+
+        .dd {
+            color: red;
+            background-color: pink;
+            width: 200px;
+            height: 30px;
+        }
+
+        .dd:hover {
+            transform: scale(-2, -2);
+            transition: 3s;
+        }
+
+        .ee {
+            color: red;
+            background-color: #ffadcd;
+            width: 200px;
+            height: 30px;
+        }
+
+        .ee:hover {
+            transform: scaleX(-2);
+            transition: 3s;
+        }
+
+        .ff {
+            color: red;
+            background-color: #aaffed;
+            width: 200px;
+            height: 30px;
+        }
+
+        .ff:hover {
+            transform: scaleY(-2);
+            transition: 3s;
+        }
+
+        .gg {
+            color: red;
+            background-color: #eeacbf;
+            width: 200px;
+            height: 30px;
+        }
+
+        .gg:hover {
+            transform: skew(-20deg, -40deg);
+            transition: 3s;
+        }
+
+        .hh {
+            color: red;
+            background-color: #ddffed;
+            width: 200px;
+            height: 30px;
+        }
+
+        .hh:hover {
+            transform: skewX(-60deg);
+            transition: 3s;
+        }
+
+        .ii {
+            color: red;
+            background-color: #adedae;
+            width: 200px;
+            height: 30px;
+        }
+
+        .ii:hover {
+            transform: skewY(-20deg);
+            transition: 3s;
+        }
+
+        .jj {
+            color: red;
+            background-color: #adcdae;
+            width: 200px;
+            height: 30px;
+        }
+
+        .jj:hover {
+            transform: rotateX(-90deg);
+            transition: 3s;
+        }
+
+        .kk {
+            color: red;
+            background-color: #adadae;
+            width: 200px;
+            height: 30px;
+        }
+
+        .kk:hover {
+            transform: rotateY(-90deg);
+            transition: 3s;
+        }
+
+        .II {
+            color: red;
+            background-color: #adfdae;
+            width: 200px;
+            height: 30px;
+        }
+
+        .II:hover {
+            transform: rotateZ(-360deg);
+            transition: 3s;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <center>
+
+        <table width="60%" BORDER="1">
+
+            <tr>
+                <td>
+
+                    <div class="a">Translate(X,Y)</div><br>
+
+                    <div class="b">TranslateX</div><br>
+
+                    <div class="c">TranslateY</div><br>
+
+                    <div class="d">Scale(X,Y)</div><br>
+
+                    <div class="e">ScaleX</div><br>
+
+                    <div class="f">ScaleY</div><br>
+
+                    <div class="g">Skew(X Angle, Y Angle)</div><br>
+
+                    <div class="h">Skew(X Angle)</div><br>
+
+                    <div class="i">Skew (Y Angle)</div><br>
+
+                    <div class="j">rotateX(deg)</div><br>
+
+                    <div class="k">rotateY(deg)</div><br>
+                    </style>
+                    </head>
+                    <div class="l">rotateZ(deg)</div><br>
+
+                </td>
+
+                <td>
+
+                    <div class="aa">Translate(X, Y)</div><br>
+
+                    <div class="bb">TranslateX</div><br>
+
+                    <div class="cc">TranslateY</div><br>
+
+                    <div class="dd">Scale(X,Y)</div><br>
+
+                    <div class="ee">ScaleX</div><br>
+
+                    <div class="ff">ScaleY</div><br>
+
+                    <div class="gg">Skew(X Angle, Y Angle)</div><br>
+
+                    <div class="hh">Skew(X Angle)</div><br>
+
+                    <div class="ii">Skew (Y Angle)</div><br>
+
+                    <div class="jj">rotateX(deg)</div><br>
+
+                    <div class="kk">rotateY(deg)</div><br>
+
+                    <div class="II">rotateZ(deg)</div><br>
+
+                </td>
+
+            </tr>
+        </table>
+    </center>
+
+</body>
+
+</html>

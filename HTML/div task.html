@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Task</title>
+    <style>
+        div.aa {
+            display: flex;
+            width: 700px;
+            height: 500px;
+            border: 2px solid black;
+            background-color: bisque;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        div.a1, div.a2,div.a3 {
+            height: 100%;
+            border: 1px solid;
+            transition: width 3s ease;
+            flex-shrink: 0;
+        }
+
+        div.a1 {
+            width: 100px;
+            background-color:yellow;
+        }
+
+        div.a2 {
+            width: 100px;
+            background-color:red;
+        }
+        div.a3 {
+            width: 100px;
+            background-color:blue;
+        }
+        div.a1:hover, div.a2:hover,div.a3:hover {
+            width: 100%;
+        }
+        /* @media screen and (max-width: 768px) {
+            div.aa {
+                flex-direction: column;
+                height: auto;
+            }
+
+            div.a1, div.a2 , div.a3{
+                width: 100%;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="aa">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+    </div>
+</body>
+
+</html>

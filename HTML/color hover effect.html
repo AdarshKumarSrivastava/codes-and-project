@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color hover</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #262626;
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            filter: grayscale(100%);
+            transform: translate(-50%,-50%);
+            transition: 3s;
+        }
+        img:hover{
+            filter: grayscale(0%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="image.png" alt="">
+</body>
+</html>
