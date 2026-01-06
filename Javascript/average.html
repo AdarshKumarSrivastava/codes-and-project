@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>average</title>
+</head>
+
+<body>
+    <!-- for finding the average of three numbers -->
+    <form action="#">
+        1st no.: <input type="text" id="num1"> <br>
+        2nd no.: <input type="text" id="num2"> <br>
+        3rd no.: <input type="text" id="num3"><br>
+        <input type="submit" value="Average" onclick="average();"> <br>
+        Result: <b id="avg"></b>
+        <br>
+        <br>
+        <!-- wap in js circle,rectangle,triangle and square area and perimeter-->
+         <h3>To find the area and perimeter of Circle</h3>
+         Radius: <input type="text" id="r"> <br>
+         <input type="submit" value="perimeter" onclick="per();"> <br>
+         Result:<b id="peri"></b> <br>
+         <input type="submit" value="area"onclick="areaa();"> <br>
+         Result:<b id="are"></b> <br>
+         <br>
+         <br>
+         <br>
+         <h3>To find the area and perimeter of Square</h3>
+         Side: <input type="text" id="n1"> <br>
+         <input type="submit" value="perimeter" onclick="Sp();"> <br>
+         Result:<b id="Speri"></b> <br>
+         <input type="submit" value="Area" onclick="Sa();"> <br>
+         Result: <b id="Sarea"></b>
+        </form>
+        <br>
+        <br>
+        <br>
+        <h3>To find the area and perimeter of Area</h3>
+        Length: <input type="text" id="no1"> <br>
+        Breath: <input type="text" id="no2"> <br>
+        <input type="submit" value="Perimeter" onclick="Rp();"> <br>
+        Result: <b id="Rperi"></b> <br>
+        <input type="submit" value="Area" onclick="Ra();"> <br>
+        Result: <b id="Rarea"></b> <br>
+</body>
+<script>
+    function average() {
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        var c = document.getElementById("num3").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        c = parseInt(c);
+        var d = (a + b + c) / 3;
+        document.getElementById("avg").innerHTML = d;
+    }
+    function per(){
+        var a=document.getElementById("r").value;
+        a=parseInt(a);
+        var b=2*3.14*a
+        document.getElementById("peri").innerHTML=b;
+    }
+    function areaa(){
+        var a=document.getElementById("r").value;
+        a=parseInt(a);
+        var b=3.14*a*a
+        document.getElementById("are").innerHTML=b
+    }
+    function Sp(){
+        var a=document.getElementById("n1").value;
+        a=parseInt(a);
+        var b=4*a
+        document.getElementById("Speri").innerHTML=b;
+    }
+    function Sa(){
+        var a=document.getElementById("n1").value;
+        a=parseInt(a);
+        var b=a*a
+        document.getElementById("Sarea").innerHTML=b;
+    }
+    function Rp(){
+        var a=document.getElementById("no1").value;
+        var b=document.getElementById("no2").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        var c=2*(a+b)
+        document.getElementById("Rperi").innerHTML=c;
+    }
+    function Ra(){
+        var a=document.getElementById("no1").value;
+        var b=document.getElementById("no2").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        var c=a*b
+        document.getElementById("Rarea").innerHTML=c;
+    }
+</script>
+
+</html>

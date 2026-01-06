@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS form</title>
+</head>
+
+<body>
+    <form action="">
+        Enter 1st no: <input type="text" size="10" id="aa"> <br>
+        Enter 2nd no: <input type="text" size="10" id="bb"> <br>
+        <input type="submit" value="SUM" onclick="add();"> <br>
+        Result:<b id="sum"></b>
+    </form> <br><br>
+    <br>
+    <br>
+    <form action="">
+        Enter 1st no: <input type="text" size="10" id="num"> <br>
+        Enter 2nd no: <input type="text" size="10" id="numm"> <br>
+        <input type="submit" value="Subtraction" onclick="sub();"> <br>
+        Result:<b id="sub"></b>
+    <br>
+    <br>
+    <form action="">
+            Enter 1st no: <input type="text" size="10" id="num1"> <br>
+            Enter 2nd no: <input type="text" size="10" id="num2"> <br>
+            <input type="submit" value="multiplication" onclick="mult();"> <br>
+            Result:<b id="mult"></b>
+    <br>
+    <br>
+    <br>
+    <form action="">
+                Enter 1st no: <input type="text" size="10" id="numm1"> <br>
+                Enter 2nd no: <input type="text" size="10" id="numm2"> <br>
+                <input type="submit" value="Rem" onclick="div();"> <br>
+                Result:<b id="div"></b>
+    <br>
+    <br>
+    <br>
+    <form action="">
+        Enter 1st no: <input type="text" size="10" id="a1"> <br>
+        Enter 2nd no: <input type="text" size="10" id="a2"> <br>
+        <input type="submit" value="quo" onclick="divv();"> <br>
+        Result:<b id="divv"></b>
+</body>
+<script>
+    function add() {
+        var a = document.getElementById("aa").value;
+        var b = document.getElementById("bb").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        var c = a + b;
+        document.getElementById("sum").innerHTML = c;
+    }
+    function sub() {
+        var a = document.getElementById("num").value;
+        var b = document.getElementById("numm").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        var c = a - b;
+        document.getElementById("sub").innerHTML = c;
+    }
+    function mult() {
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        var c = a * b;
+        document.getElementById("mult").innerHTML = c;
+    }
+    function div() {
+        var a = document.getElementById("numm1").value;
+        var b = document.getElementById("numm2").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        var c = a % b;
+        document.getElementById("div").innerHTML = c;
+    }
+    function divv() {
+        var a = document.getElementById("a1").value;
+        var b = document.getElementById("a2").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        var c = a / b;
+        d = parseInt(c)
+        document.getElementById("divv").innerHTML = d;
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional</title>
+</head>
+
+<body>
+    <form action="#">
+        <h3>To check if a number is greater or smaller than 50.</h3>
+        Enter a no.: <input type="text" id="num" size="10"> <br>
+        <input type="submit" value="check" onclick="abc();"> <br>
+        Result:<b id="a"></b>
+         
+        <br>
+         <br>
+
+        <h3>To input two numbers and print the bigger number.</h3>
+        Enter no.1: <input type="text" id="num1" size="10"> <br>
+        Enter no.2: <input type="text" id="num2" size="10"> <br>
+        <input type="submit" onclick="diff();"> <br>
+        Result:<b id="q"></b>
+        
+        <br>
+        <br>
+        
+        <h3>To input two numbers and print the bigger number and smaller number.</h3>
+        Enter no.1: <input type="text" id="numm1" size="10"> <br>
+        Enter no.2: <input type="text" id="numm2" size="10"> <br>
+        <input type="submit" onclick="ab();"> <br>
+        Result:<b id="s"></b>
+        <br>
+        <br>
+        
+        <h3>Input a no. two check if it is even.</h3>
+        Enter no.: <input type="text" id="n1" size="10"> <br>
+        <input type="submit" onclick="even();" id=""> <br>
+        Result:<b id="Even"></b>
+        <br>
+        <br>
+        <h3>Input a no. two check if it is even then print its square if the no. is odd then print cude of the number.</h3>
+        Enter no.: <input type="text" id="nu1" size="10"> <br>
+        <input type="submit" onclick="as();" id=""> <br>
+        Result:<b id="ad"></b>
+    </form>
+</body>
+<script>
+    function abc() {
+        var a = document.getElementById("num").value;
+        a = parseInt(a);
+        if (a > 50) {
+            document.getElementById("a").innerHTML = ("the no. is greater than 50");
+        }
+        else {
+            document.getElementById("a").innerHTML = ("the no. is smaller than 50");
+        }
+    }
+    function diff() {
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        if(a>b){
+            document.getElementById("q").innerHTML = a;
+        }
+        else {
+            document.getElementById("q").innerHTML = b;
+        }
+    }
+    function ab(){
+        var a=document.getElementById("numm1").value;
+        var b=document.getElementById("numm2").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        if(a>b){
+            document.getElementById("s").innerHTML =("The bigger number is"+a+"the smaller number is"+b);
+        }
+        else {
+            document.getElementById("s").innerHTML = ("The bigger number is"+b+"the smaller number is"+a);
+        }
+    }
+    function even(){
+        var a=document.getElementById("n1").value;
+        a=parseInt(a);
+        if(a%2==0){
+            document.getElementById("Even").innerHTML=("THE no. is Even");
+        }
+    }
+    function as(){
+        var a=document.getElementById("nu1").value;
+        a=parseInt(a);
+        var b=a*a;
+        var d=a*a*a;
+        if(a%2==0){
+            document.getElementById("ad").innerHTML=b;
+        }
+        else{
+            document.getElementById("ad").innerHTML=d;
+        }
+    }
+</script>
+
+</html>

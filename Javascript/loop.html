@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <H3>click on the button to get the series.</H3>
+    <input type="submit" onclick="abc();" value="Get the series"> <br>
+    Result: <b id="res"></b>
+</body>
+<script>
+    function abc(){
+        // iska ans 10 ayega direct kyuki ek id ek bar mai ek hi value lekr jayegi so ye latest value dega
+        // var a=1;
+        // while(a<=10){
+        //     document.getElementById("res").innerHTML=a;
+        //     a=a+1;
+        // }
+        var a=1;
+        while(a<=10){
+            document.write(a); 
+            // ye ek alg page pe khulega kyuki iska direct interaction hoga browers se
+            a=a+1;
+        }
+    }
+</script>
+</html>

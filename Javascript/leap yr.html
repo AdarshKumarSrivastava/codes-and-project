@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap year</title>
+</head>
+<body>
+    <form action="#">
+        <h2>To find the year is leap year or not...</h2>
+        Enter year: <input type="text" id="n1"> <br>
+        <input type="submit" value="Check" onclick="ab();"> <br>
+        Result: <b id="leap"></b>
+    </form>
+</body>
+<script>
+    function ab(){
+        var a=document.getElementById("n1").value;
+        a=parseInt(a)
+        // dividing this by 100 to find the no. is century year or not 
+        // with 400 to fing the century year is leap or not
+        if(a%100==0){      
+            if(a%400){
+                
+                document.getElementById("leap").innerHTML=(a+" "+"is a leap year.")
+            }
+            else{
+                document.getElementById("leap").innerHTML=(a+" "+"is not a leap year.")
+            }
+        }
+        else if(a%4==0){
+            document.getElementById("leap").innerHTML=(a+" "+"is a leap year.")
+        }
+        else{
+            document.getElementById("leap").innerHTML=(a+" "+"is not a leap year.")
+        }
+    }
+</script>
+</html>

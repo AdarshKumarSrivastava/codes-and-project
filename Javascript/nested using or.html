@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested</title>
+</head>
+<body>
+        <!-- WAP in Js to input of 4 sub of a student and print pass if marks of any sub is 
+     greater than 40 or percentage is greater than 50. -->
+     <form action="#">
+        <h3>Input 4 sub of a student if marks of any sub is 
+            greater than 40 or percentage is greater than 50 then student is pass.</h3>
+        Maths: <input type="text" id="n1">  <br>  
+        Physics: <input type="text" id="n2">    <br>
+        Chemistry: <input type="text" id="n3">    <br>
+        Computer: <input type="text" id="n4">    <br>
+        <input type="submit" value="Check" onclick="abc();"> <br>
+        Result:<b id="per"></b>
+    </form> 
+</body>
+<script>
+    function abc(){
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("n2").value;
+        var c=document.getElementById("n3").value;
+        var d=document.getElementById("n4").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        c=parseInt(c);  
+        d=parseInt(d);
+        var e=(a+b+c+d)/4;
+        e=parseInt(e);
+        if(a>40||b>40||c>40||d>40){
+            document.getElementById("per").innerHTML=("PASS");
+        }
+        else if(e>50){
+            document.getElementById("per").innerHTML=("PASS");
+        }
+        else{
+            document.getElementById("per").innerHTML=("FAIL");
+        }
+    }
+</script>
+</html>

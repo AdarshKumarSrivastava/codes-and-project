@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <form action="#">
+        <!-- greateset if three -->
+        <!-- Smallest of three -->
+        <!-- leap year -->
+        <!--with logical and without logical  -->
+
+        <form action="#">
+            Enter 1 for married 2 for unmarried: <input type="text" id="n1"><br>
+            Enter 3 for male 4 for female: <input type="text" id="n2"><br>
+            Enter Age : <input type="text" id="n3"> <br>
+            <input type="submit" onclick="abc();"> <br>
+            Result: <b id="res"></b>
+        </form>
+    </form>
+</body>
+<script>
+    function abc() {
+    var a = document.getElementById("n1").value;
+    var b = document.getElementById("n2").value;
+    var c = document.getElementById("n3").value;
+    a = parseInt(a);
+    b = parseInt(b);
+    c = parseInt(c);
+        if (a == 1) {
+            document.getElementById("res").innerHTML = ("You are selected");
+        }
+        else if (a == 2) {
+            if (b == 3) {
+                if (c >= 40) {
+                    document.getElementById("res").innerHTML = ("You are selected");
+                }
+                else {
+                    document.getElementById("res").innerHTML = ("Minimum age criteria is 40");
+                }
+            }
+            else if (b == 4) {
+                if (c >= 30) {
+                    document.getElementById("res").innerHTML = ("You are selected");
+                }
+                else {
+                    document.getElementById("res").innerHTML = ("Minimum age criteria is 30");
+                }
+            }
+            else {
+                document.getElementById("res").innerHTML = ("Enter 3 or 4 for further process");
+            }
+        }
+        else {
+            document.getElementById("res").innerHTML = ("Enter 1 or 2 for further process");
+        }
+    }
+</script>
+
+</html>

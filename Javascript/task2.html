@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- wap in js for input a no. from user and print the output as per following criteria -->
+     <form action="#">
+        <h3>For the no. is positive or negative </h3>
+        Enter a no.: <input type="text" id="n1"><br>
+        <input type="submit" value="check" onclick="abc();"> <br>
+        Result: <b id="res"></b>
+     </form>
+</body>
+<script>
+    function abc(){
+        var a=document.getElementById("n1").value;
+        a=parseInt(a);
+        if(a>0){
+            document.getElementById("res").innerHTML=("The given no. is positive");
+        }
+        else if(a<0){
+            document.getElementById("res").innerHTML=("The given no. is negative");
+        }
+        else{
+            document.getElementById("res").innerHTML=("Zero")
+        }
+    }
+</script>
+</html>

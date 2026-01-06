@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <form action="#">
+        <h2>Finding Greatest amoung three..</h2>
+        Enter no.1: <input type="text" id="n1"> <br>
+        Enter no.2: <input type="text" id="n2"> <br>
+        Enter no.3: <input type="text" id="n3"> <br>
+        <input type="submit" value="check" onclick="abc();"> <br>
+        Result: <b id="res"></b> 
+        <br>
+        <br>
+        <br>
+        <h2>Finding Smallest amoung three..</h2>
+        Enter no.1: <input type="text" id="nu1"> <br>
+        Enter no.2: <input type="text" id="nu2"> <br>
+        Enter no.3: <input type="text" id="nu3"> <br>
+        <input type="submit" value="check" onclick="ab();"> <br>
+        Result: <b id="get"></b>
+    </form>
+</body>
+<script>
+    function abc(){
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("n2").value;
+        var c=document.getElementById("n3").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        c=parseInt(c);
+        if(a>b&&a>c){
+            document.getElementById("res").innerHTML=("Greatest amoung these no. is"+a);
+        }
+        else if(b>a&&b>c){
+            document.getElementById("res").innerHTML=("Greatest amoung these no. is"+b);
+        }
+        else{
+            document.getElementById("res").innerHTML=("Greatest amoung these no. is"+c);
+        }
+    }
+    function ab(){
+        var a=document.getElementById("nu1").value;
+        var b=document.getElementById("nu2").value;
+        var c=document.getElementById("nu3").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        c=parseInt(c);
+        if(a<b&&a<c){
+            document.getElementById("get").innerHTML=("smallest amoung these no. is"+a);
+        }
+        else if(b<a&&b<c){
+            document.getElementById("get").innerHTML=("smallest amoung these no. is"+b);
+        }
+        else{
+            document.getElementById("get").innerHTML=("smallest amoung these no. is"+c);
+        }
+    }
+</script>
+</html>

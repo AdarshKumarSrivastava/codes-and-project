@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a=0;
+    var b=prompt("Enter any number");
+    b=parseInt(b);
+    while(b>0){
+        var c=parseInt(b%10);
+        b=parseInt(b/10);
+        a=a*10+c;
+    }
+    document.write(a);
+</script>
+</html>

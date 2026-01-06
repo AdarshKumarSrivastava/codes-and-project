@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case</title>
+</head>
+<body>
+    Enter 1-7 value: <input type="text" id="num"> <br>
+    Result: <b id="result"></b> <br> <br>
+    <input type="submit" onclick="d();" value="Submit">
+</body>
+<script>
+    function d(){
+        var a=document.getElementById("num").value;
+        switch(a){
+    
+    case '1':
+        var b="Monday";
+        break;
+    case '2':
+        var b="Tuesday";
+        break;
+    case '3':
+        var b="Wednesday";
+        break;
+    case '4':
+        var b="Thusday";
+        break;
+    case '5':
+        var b="Friday";
+        break;
+    case '6':
+        var b="Saturday";
+        break;
+    case '7':
+        var b="Sunday";
+        break;
+    default:
+        var b="Wrong Entered Value";
+        break;
+    }
+    document.getElementById("result").innerHTML=b;
+}    
+</script>
+</html>

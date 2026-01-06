@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case</title>
+</head>
+
+<body>
+    <form action="#">
+        Enter 1-4 for choosing the option. <input type="text" id="n1"> <br>
+        1.Addition <br>
+        2.Subtract. <br>
+        3.Multiplication. <br>
+        4.Division. <br>
+        Enter first number: <input type="text" id="n2"> <br>
+        Enter second number: <input type="text" id="n3"> <br>
+        <input type="submit" onclick="abc();" value="Evaluate"> <br>
+        Result:<b id="rs"></b>
+        <br>
+        <br>
+        <h3>To check the character is vowel or consonant.</h3>
+        Enter 1 or 2 for choosing the option. <input type="text" id="n5"> <br>
+        1.Checking the character is vowel. <br>
+        2.Checking the character is Consonant. <br>
+        Enter any character : <input type="text" id="n4">  <br>
+        <input type="submit" onclick="ab();" value="check"> <br>
+        Result:<b id="res"></b>
+        <h3>Find the area or perimeter of a circle.</h3>
+        Enter the choice : <input type="text"id="n6"> <br>
+        Enter 1 for area and 2 for perimeter. <br>
+        Enter Radius : <input type="text" id="n7"> <br>
+        <input type="submit" onclick="a();" value="Evaluate"> <br>
+        Result:<b id="ress"></b>
+        <br>
+        <br>
+        <h3>Choose operator.</h3>
+        Enter +,-,*,/ for choosing the operator. <input type="text" id="n8"> <br>
+        Enter first number: <input type="text" id="n9"> <br>
+        Enter second number: <input type="text" id="n10"> <br>
+        <input type="submit" onclick="op();" value="Evaluate"> <br>
+        Result:<b id="op"></b>
+    </form>
+
+</body>
+<script>
+    function abc() {
+        var a = document.getElementById("n1").value;
+        switch (a) {
+            case '1':
+                var b = document.getElementById("n2").value;
+                var c = document.getElementById("n3").value;
+                b = parseInt(b);
+                c = parseInt(c);
+                var d = b + c
+                break
+            case '2':
+                var b = document.getElementById("n2").value;
+                var c = document.getElementById("n3").value;
+                b = parseInt(b);
+                c = parseInt(c);
+                var d = b - c
+                break
+            case '3':
+                var b = document.getElementById("n2").value;
+                var c = document.getElementById("n3").value;
+                b = parseInt(b);
+                c = parseInt(c);
+                var d = c * b
+                break
+            case '4':
+                var b = document.getElementById("n2").value;
+                var c = document.getElementById("n3").value;
+                b = parseInt(b);
+                c = parseInt(c);
+                var d = b / c
+                break
+            default:
+                var d = "Wrong entered value"
+        }
+        document.getElementById("rs").innerHTML = d;
+    } 
+    function ab(){
+        var b=document.getElementById("n5").value;
+        var a=document.getElementById("n4").value;
+
+        switch(b){
+            case "1":
+                if(a=="a" || a=="e" ||a=="i" || a=="o" || a=="u"){
+                    document.getElementById("res").innerHTML=("Vowel");
+                }
+                else if (a=="A" || a=="E" ||a=="I" || a=="O" || a=="U"){
+                    document.getElementById("res").innerHTML=("Vowel");
+                }
+                else{
+                    document.getElementById("res").innerHTML=("It is not a vowel");
+                }
+                 break
+            
+            case "2":
+                if(a>="a" && a<="z" ){
+                    
+                    document.getElementById("res").innerHTML=("Consonant");}
+                   
+                else if (a>="A" && a<="Z"){
+                    document.getElementById("res").innerHTML=("Consonant");
+
+                }
+                else{
+
+                    document.getElementById("res").innerHTML=("only alfabets");    
+                }
+            }
+        }
+        function a(){
+            var a=document.getElementById("n6").value;
+            switch(a){
+                case "1":
+                    var b=document.getElementById("n7").value;
+                    var c=3.14*b**2
+                    break
+                case "2":
+                    var b=document.getElementById("n7").value;
+                    var c=3.14*b*2
+                    break
+                default:
+                    var c="Wrong entered value"   
+                    break
+            }
+            document.getElementById("ress").innerHTML=c;
+        }
+        function op() {
+        var a = document.getElementById("n8").value;
+        switch (a) {
+            case '+':
+                var b = document.getElementById("n9").value;
+                var c = document.getElementById("n10").value;
+                b = parseInt(b);
+                c = parseInt(c);
+                var d = b + c
+                break
+            case '-':
+                var b = document.getElementById("n9").value;
+                var c = document.getElementById("n10").value;
+                b = parseInt(b);
+                c = parseInt(c);
+                var d = b - c
+                break
+            case '*':
+                var b = document.getElementById("n9").value;
+                var c = document.getElementById("n10").value;
+                b = parseInt(b);
+                c = parseInt(c);
+                var d = c * b
+                break
+            case '/':
+                var b = document.getElementById("n9").value;
+                var c = document.getElementById("n10").value;
+                b = parseInt(b);
+                c = parseInt(c);
+                var d = b / c
+                break
+            default:
+                var d = "Wrong entered value"
+        }
+        document.getElementById("op").innerHTML = d;
+    } 
+</script>
+
+</html>

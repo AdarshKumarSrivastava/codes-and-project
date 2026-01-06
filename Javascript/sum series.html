@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum series</title>
+</head>
+<body>
+    <form action="#">
+        <h4>Ques1= 1+2+3+4.....n </h4>
+        Enter the nth term: <input type="text" id="n1"> <br>
+        <input type="submit" value="Series" onclick="abc();"> <br>
+        <h4>Ques 2=1+4+9+16......n2</h4>
+        Enter the nth term: <input type="text" id="n2"> <br>
+        <input type="submit" value="Series" onclick="ab();"> <br>
+        <h4>Ques3= 1+8+27.........n3</h4>
+        Enter the nth term: <input type="text" id="n3"> <br>
+        <input type="submit" value="Series" onclick="a();"> <br>
+    </form>
+</body>
+<script>
+    function abc(){
+        var n=document.getElementById("n1").value;
+        n=parseInt(n);
+        var a=1;
+        var sum=0;
+        while(a<=n){
+            sum=sum+a
+            a=a+1
+        }
+        document.write(sum);
+    }
+    function ab(){
+        var n=document.getElementById("n2").value;
+        n=parseInt(n);
+        var c=n**2
+        var a=1;
+        var b=1;
+        var sum=0;
+        while(a<=c){
+            b=a**2
+            sum=sum+b
+            a=a+1
+        }
+        document.write(sum);
+    }
+    function a(){
+        var n=document.getElementById("n3").value;
+        n=parseInt(n);
+        var c=n**3
+        var a=1;
+        var b=1;
+        var sum=0;
+        while(a<=c){
+            b=a**3
+            sum=sum+b
+            a=a+1
+        }
+        document.write(sum);
+    }
+    
+</script>
+</html>

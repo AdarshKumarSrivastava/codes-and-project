@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+    <form action="#">
+        <h2>Print your name 10 times</h2>
+        <input type="submit" value="print" onclick="abc();"> <br>
+        <h3>Even no. from 1 to 20.</h3>
+        <input type="submit" value="print" onclick="ab();"> <br>
+        <h3>Odd no. from 1 to 30.</h3>
+        <input type="submit" value="print" onclick="a();"> <br>
+        <h3>count the digit of the given number.</h3>
+        Enter digits : <input type="text" id="n1"> <br>
+        <input type="submit" value="print" onclick="baa();"> <br>
+        <h3>Sum of the digit.</h3>
+        Enter digits : <input type="text" id="n2"> <br>
+        <input type="submit" value="print" onclick="ba();"> <br>
+        <h3>Print the table.</h3>
+        Enter Number : <input type="text" id="n3"> <br>
+        <input type="submit" value="print" onclick="b();"> <br>
+        <h3>Factorial of the number.</h3>
+        Enter Number : <input type="text" id="n4"> <br>
+        <input type="submit" value="print" onclick="fact();"> <br>
+        <h3>Revers the number.</h3>
+        Enter Number : <input type="text" id="n5"> <br>
+        <input type="submit" value="print" onclick="rev();"> <br>
+        <h3>The number is palindrome or not.</h3>
+        Enter Number : <input type="text" id="n6"> <br>
+        <input type="submit" value="print" onclick="pa();"> <br>
+        <h3>The number is Even palindrome ,Odd palindrome or not a palindrom.</h3>
+        Enter Number : <input type="text" id="n7"> <br>
+        <input type="submit" value="print" onclick="p();"> <br>
+        <h3>Check the number is prime or not prime.</h3>
+        Enter Number : <input type="text" id="n8"> <br>
+        <input type="submit" value="print" onclick="prime();"> <br>
+        <h3>Sum of first n odd numbers.</h3>
+        Enter nth number : <input type="text" id="n9"> <br>
+        <input type="submit" value="print" onclick="odd();"> <br>
+        <h3>Sum of first n even numbers.</h3>
+        Enter nth number : <input type="text" id="n10"> <br>
+        <input type="submit" value="print" onclick="even();"> <br>
+        <!-- <h3>L.C.M of two number.</h3>
+        Enter 1st number : <input type="text" id="n11"> <br>
+        Enter 2nd number : <input type="text" id="n12"> <br>
+        <input type="submit" value="print" onclick="LCM();"> <br> -->
+        <h3>Count a specific digit in a given number. </h3>
+        Enter Number : <input type="text" id="n13"> <br>
+        Specific Number : <input type="text" id="n14"> <br>
+        <input type="submit" value="print" onclick="count();"> <br>
+        <h3>Delete a specific digit in a given number. </h3>
+        Enter Number : <input type="text" id="n15"> <br>
+        Number you want to Delete : <input type="text" id="n16"> <br>
+        <input type="submit" value="print" onclick="del();"> <br>
+        <h3>The number is Armstrong or not Armstrong.</h3>
+        Enter Number : <input type="text" id="n17"> <br>
+        <input type="submit" value="print" onclick="arm();"> <br>
+        <h3>Write base and power as input.</h3>
+        Enter Base : <input type="text" id="n18"> <br>
+        Enter Power : <input type="text" id="n19"> <br>
+        <input type="submit" value="print" onclick="power();"> <br>
+        <h3>Find average of the number till zero enter.</h3>
+        Enter Number : <input type="text" id="n20"> <br>
+        <input type="submit" value="print" onclick="avg();"> <br>
+        <h3>Magic number.</h3>
+        Enter Number : <input type="text" id="n21"> <br>
+        <input type="submit" value="print" onclick="magic();"> <br>
+    </form>
+</body>
+<script>
+    function abc(){
+        var a="Adarsh";
+        var b=1
+        while(b<=10){
+            document.write(a,"<br>");
+            b=b+1
+        }
+    }
+    function ab(){
+        var a=1;
+        while(a<=20){
+            if(a%2==0){
+                document.write(a," ");
+                a=a+1;
+            }
+            else{
+                a=a+1
+            }
+        }
+    }
+    function a(){
+        var a=1;
+        while(a<=30){
+            if(a%2==0){
+                a=a+1;
+            }
+            else{
+                document.write(a," ");
+                a=a+1
+            }
+        }
+    }
+    function baa(){
+        var a=document.getElementById("n1").value;
+        a=parseInt(a);
+        var count=0;
+        while(a>0){
+            count=count+1;
+            a=a/10;
+            a=parseInt(a);
+        }
+        document.write(count);
+    }
+    function ba(){
+        var a=document.getElementById("n2").value;
+        a=parseInt(a);
+        var b=0;
+        var sum=0;
+        while(a>0){
+            b=a%10;
+            sum=sum+b;
+            a=a/10;
+            a=parseInt(a);
+        }
+        document.write(sum);
+    }
+    function b(){
+        var a=document.getElementById("n3").value;
+        a=parseInt(a);
+        var b=1;
+        var table=1;
+        while(b<=10){
+            table=a*b
+            document.write(a+"×"+b+"="+table,"<br>");
+            b=b+1
+        }
+    }
+    function fact(){
+        var a=document.getElementById("n4").value;
+        a=parseInt(a);
+        var b=1;
+        while(a>0){
+            b=b*a;
+            a=a-1;
+        }
+        document.write(b);
+    }
+    function rev(){
+        var a=document.getElementById("n5").value;
+        a=parseInt(a);
+        var r=0;
+        var rem=0;
+        while(a>0){
+            rem=a%10;
+            r=r*10+rem
+            a=a/10
+            a=parseInt(a)
+        }
+        document.write(r);
+    }
+    function pa(){
+        var a=document.getElementById("n6").value;
+        a=parseInt(a);
+        var d=a;
+        var r=0;
+        var rem=0;
+        while(a>0){
+            rem=a%10;
+            r=r*10+rem;
+            a=a/10;
+            a=parseInt(a);
+        }
+        if(d==r){
+            document.write("Palindrome");
+        }
+        else{
+            document.write("Non-Palindrome");
+        }
+    }
+    function p(){
+        var a=document.getElementById("n7").value;
+        a=parseInt(a);
+        var d=a;
+        var r=0;
+        var rem=0;
+        while(a>0){
+            rem=a%10;
+            r=r*10+rem;
+            a=a/10;
+            a=parseInt(a);
+        }
+        if(d==r){
+            if(d%2==0){
+
+                document.write(" Even Palindrome");
+            }
+            else{
+                document.write(" Odd Palindrome");
+            }
+        }
+        else{
+            document.write("Non-Palindrome");
+        }
+    }
+    function prime(){
+        var a=document.getElementById("n8").value;
+        a=parseInt(a);
+        if(a>3){
+            if(a%2==0 || a%3==0){
+                document.write("Not prime");
+            }
+            else{
+                document.write("Prime");
+            }
+        }
+        else if(a%2==0 ||a%3==0 || a%1==0){
+            document.write("Prime");
+        }
+        else{
+            document.write("Not prime")
+        }
+
+    }
+    function odd(){
+        var a=document.getElementById("n9").value;
+        a=parseInt(a);
+        var b=1;
+        var sum=0;
+        while(b<=a){
+            if(b%2==0){
+                b=b+1;
+            }
+            else{
+                sum=sum+b;
+                b=b+1;
+            }
+        }
+        document.write("The sum n even number is ="+sum," ");
+    }
+    function even(){
+        var a=document.getElementById("n10").value;
+        a=parseInt(a);
+        var b=1;
+        var sum=0;
+        while(b<=a){
+            if(b%2==0){
+                sum=sum+b;
+                b=b+1;
+            }
+            else{
+                b=b+1;
+            }
+        }
+        document.write("The sum n even number is ="+sum," ");
+    }
+    function LCM(){
+        var a=document.getElementById("n11").value;
+        var b=document.getElementById("n12").value;
+        a=parseInt(a);
+        b=parseInt(b);
+    }
+    function count(){
+        var a=document.getElementById("n13").value;
+        var b=document.getElementById("n14").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        var c=0;
+        var d=0;
+        while(a>0){
+            d=a%10;
+            if(d==b){
+                c=c+1;
+                a=a/10;
+                a=parseInt(a);
+            }
+            else{
+                a=a/10;
+                a=parseInt(a);
+            }  
+        }   
+        document.write(c);
+    }
+    function del(){
+        var a=document.getElementById("n15").value;
+        var b=document.getElementById("n16").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        var c=0;
+        var d=0;
+        var r=0;
+        var re=0;
+        var rem=0;
+        while(a>0){
+            d=a%10;
+            if(d==b){
+                a=a/10;
+                a=parseInt(a);
+            }
+            else{
+                c=c*10+d;
+                a=a/10;
+                a=parseInt(a); 
+            }  
+        }
+        r=c;
+        while(r>0){
+            rem=r%10;
+            re=re*10+rem; 
+            r=r/10;
+            r=parseInt(r); 
+        }
+        // document.write(c);
+        document.write(re); 
+    }
+    function arm(){
+        var a=document.getElementById("n17").value; 
+        a=parseInt(a);
+        var aa=a;
+        var b=0;
+        var c=0;
+        while(a>0){
+            b=a%10;
+            c=c+b**3;
+            a=a/10;
+            a=parseInt(a);
+        }
+        if(aa==c){
+            document.write("Number is Armstrong")
+        }
+        else{
+            document.write("Not Armstrong")
+        } 
+    }
+    function power(){
+        var a=document.getElementById("n18").value;
+        var b=document.getElementById("n19").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        var c=a**b;
+        document.write(c);
+    }
+    function avg(){
+        var a=document.getElementById("n20").value;
+        a=parseInt(a);
+        var c=0;
+        var s=0;
+        var avgg=s/c;
+        avgg=parseInt(avgg);
+        while(true){
+            if(a==0){
+                document.write(avgg);
+                break
+            }
+            else{
+                sum=sum+a;
+                c=c+1;
+            }
+        }
+    }
+    function magic(){
+        var a=document.getElementById("n21").value;
+        a=parseInt(a);
+        var b=0;
+        var c=0;
+        var d=0;
+        var e=0;
+        var f=0;
+        var g=a;
+        while(a>0){
+            c=c+1;
+            a=a/10; 
+            a=parseInt(a);
+        }
+        e=c;
+        f=10**c;
+        b=g**2;
+        d=b%f;
+        // document.write(d); 
+        if(g==d){
+            document.write("Magic number");
+        }
+        else{
+            document.write("Not a magic number");
+        }
+    }
+</script> 
+</html>
